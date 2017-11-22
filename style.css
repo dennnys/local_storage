@@ -1,0 +1,28 @@
+#eror, #erorM {
+	color: red;
+}
+.glyphicon-pencil, .glyphicon-trash {
+	cursor:pointer;
+		padding: 5px;
+		border-radius: 3px;
+}
+.glyphicon-pencil:hover  {
+	color: #fff;
+	background-color: green;
+}
+.glyphicon-trash:hover  {
+	color: #fff;
+	background-color: red;
+}
+#formModifie {
+	background-color: #ddd;
+	overflow: hidden;
+	width: 400px;
+	padding: 20px;
+	border-radius: 15px;
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	display: none;
+}
+

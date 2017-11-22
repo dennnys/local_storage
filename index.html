@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- 
+TP 1 ex_1
+Web Storage – Liste des visiteurs en local
+Créer par:
+	Birnaz Denis - étudiant
+	Jonathan Brûlé - étudiant
+Toutes les informations sont utilisées uniquement pour les études -->
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Ex1 Birnaz Denis</title>
+	<link rel ="stylesheet" href ="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel ="stylesheet" href ="style.css">
+</head>
+<body>
+	<div class="container">
+		<form name="formDonnes" id="formDonnes"> <!-- formulaire pour introduire les données -->
+			<h3>Introduire le donnes</h3>
+			<div class="col-md-3">
+				<div class="form-group">
+					<label for="prenom">Prenom:</label>
+					<input type="text" class="form-control" id="prenom" name="prenom" required>
+				</div>
+				<div class="form-group">
+					<label for="nom">Nom:</label>
+					<input type="text" class="form-control" id="nom" name="nom" required>
+				</div>
+				<div class="form-group">
+					<label for="courriel">Courriel:</label>
+					<input type="email" class="form-control" id="courriel" name="courriel" required>
+				</div>
+				<div>
+					<div id="eror"></div>
+					<button type="reset" id="ressetF" class="btn btn-warning col-md-5">Annuler</button>
+					<button type="button" id="submitF" class="btn btn-success col-md-5 col-md-offset-2">Sauver</button>
+				</div>
+			</div>
+		</form>
+		<div class="col-md-9"> <!-- toutes les données de localstorage -->
+			<table id="tableDonne" class="table table-hover"> 
+			</table>
+			<div id="efface"></div>
+		</div>
+	</div>
+
+	<div id="formModifie"> <!-- formulaire pour modifier les données -->
+		<form name="formDonnesM" id="formDonnesM">
+			<h3>Modofie le donnes</h3>
+			<div class="col-md-12">
+			<input type="hidden" name="idM" id="idM" value="">
+				<div class="form-group">
+					<label for="prenomM">Prenom:</label>
+					<input type="text" class="form-control" id="prenomM" name="prenomM" required>
+				</div>
+				<div class="form-group">
+					<label for="nomM">Nom:</label>
+					<input type="text" class="form-control" id="nomM" name="nomM" required>
+				</div>
+				<div class="form-group">
+					<label for="courrielM">Courriel:</label>
+					<input type="email" class="form-control" id="courrielM" name="courrielM" required>
+				</div>
+				<div>
+					<div id="erorM"></div>
+					<button type="reset" id="ressetFM" class="btn btn-danger col-md-5">Annuler</button>
+					<button type="button" id="submitFM" class="btn btn-success col-md-5 col-md-offset-2">Sauver</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<script src='main.js'></script>
+</body>
+</html>
